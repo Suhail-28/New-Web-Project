@@ -29,7 +29,7 @@
         <a href="#about">about</a>
         <a href="#team">our team</a>
         <a href="#contact">contact</a>
-        <a href="login.html">login</a>
+        <!-- <a href="New Login.html" target="_blank">login</a> -->
         <!-- <a href="">Cool stuff</a> -->
       </nav>
     </header>
@@ -57,7 +57,6 @@
 
       <div class="image">
         <img src="../Image/college1.jpg" />
-        <!-- <img src="../Image/college2.jpg" alt=""> -->
       </div>
     </section>
 
@@ -77,7 +76,7 @@
             the semester and subject, that are verified by the respective
             department HOD's.
           </p>
-          <a href="login.html" class="btn">read more</a>
+          <a href="Notes.html" class="btn">read more</a>
         </div>
 
         <div class="box">
@@ -87,17 +86,17 @@
             In this section students will have access to a visual representation
             of the course they are in with detailed information about each step.
           </p>
-          <a href="login.html" class="btn">read more</a>
+          <a href="Roadmap.html" class="btn">read more</a>
         </div>
 
         <div class="box">
-          <img src="../Image/f-icon3.png" alt="" />
+          <img src="../Image/f-icon3.png" />
           <h3>friendly interactions</h3>
           <p>
             In this section students will have access to anonymous counselling
             done by our college official counsellors.
           </p>
-          <a href="login.html" class="btn">read more</a>
+          <a href="" class="btn">read more</a>
         </div>
       </div>
     </section>
@@ -132,13 +131,8 @@
             of the suffering. The Jesuit motto “educating men and women for
             others” animates our vision to reach out to those most in need.
           </p>
-          <a href="https://www.sjc.ac.in/aboutus.php" class="btn">read more</a>
-          <!-- <div class="buttons">
-            <a href="#" class="btn"> <i class="fab fa-apple"></i> app store </a>
-            <a href="#" class="btn">
-              <i class="fab fa-google-play"></i> google-play
-            </a>
-          </div> -->
+          <a
+            href="https://www.sjc.ac.in/aboutus.php"class="btn"target="_blank">read more</a>
         </div>
       </div>
     </section>
@@ -186,7 +180,7 @@
           <i class="fas fa-quote-right"></i>
           <div class="user">
             <img src="../Image/Adnan.jpeg" />
-            <h3> Syed Adnan - <br />creator and tester</h3>
+            <h3>Syed Adnan - <br />creator and tester</h3>
             <div class="comment">
               I'm a 3rd-year degree student at St Joseph's College, Bangalore,
               who is pursuing to become a Data Scientist. I came up with the
@@ -202,14 +196,12 @@
           <i class="fas fa-quote-right"></i>
           <div class="user">
             <img src="../Image/Navish.jpeg" />
-            <h3>
-              navish - <br/>associate developer
-            </h3>
+            <h3>navish - <br />associate developer</h3>
             <div class="comment">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
-              et, perspiciatis nisi tempore aspernatur accusantium sed
-              distinctio facilis aperiam laborum autem earum repellat, commodi
-              eum. Ullam cupiditate expedita officiis obcaecati?
+              I'm a 3rd year degree student of St Joseph's College.As a member
+              of the developing team, my responsibility was to work on website
+              development and collecting source files to upload.I tried to help
+              my teammates to build a successful website.
             </div>
           </div>
         </div>
@@ -218,16 +210,13 @@
           <i class="fas fa-quote-right"></i>
           <div class="user">
             <img src="../Image/Kaunian.jpeg" />
-            <h3>
-              Kaunian - <br/>associate developer
-            </h3>
+            <h3>Kaunian - <br />associate developer</h3>
             <div class="comment">
-              i'm a 3rd year degree student of st. joseph's college
-              Bangalore. As a member of the developing team and as
-              an associate developer of this website. i have assisted with
-              sources and information gathering.i always tried to
-              contribute my support toward my team and success of this
-              project.
+              i'm a 3rd year degree student of st. joseph's college Bangalore.
+              As a member of the developing team and as an associate developer
+              of this website. i have assisted with sources and information
+              gathering.i always tried to contribute my support toward my team
+              and success of this project.
             </div>
           </div>
         </div>
@@ -240,30 +229,37 @@
 
     <section class="contact" id="contact">
       <div class="image">
-        <img src="../Image/contact-img.png" alt="" />
+        <img src="../Image/contact-img.png" />
       </div>
 
-      <form action="">
+      <form action="https://formspree.io/f/xoqrjjgy" method="post">
         <h1 class="heading">contact us</h1>
 
         <div class="inputBox">
-          <input type="text" required />
-          <label>name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="name">name</label>
         </div>
 
         <div class="inputBox">
-          <input type="email" required />
-          <label>email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="email">email</label>
         </div>
 
         <div class="inputBox">
-          <input type="number" required />
-          <label>phone</label>
+          <input type="number" id="phone" name="phone" required />
+          <label for="phone">phone</label>
         </div>
 
         <div class="inputBox">
-          <textarea required name="" id="" cols="30" rows="10"></textarea>
-          <label>message</label>
+          <input
+            type="message"
+            id="message"
+            name="message"
+            cols="30"
+            rows="10"
+            required
+          />
+          <label for="message">message</label>
         </div>
 
         <input type="submit" class="btn" value="send message" />
@@ -297,10 +293,11 @@
 
         <div class="box">
           <h3>follow us</h3>
-          <a href="https://www.facebook.com/sjcbengaluru/">facebook</a>
-          <a href="https://www.instagram.com/sjcbengaluru/?hl=en">instagram</a>
-          <a href="https://www.youtube.com/c/SJCBengaluru">you tube</a>
-          <a href="https://twitter.com/sjcbengaluru?lang=en">twitter</a>
+          <a href="https://www.facebook.com/sjcbengaluru/" target="_blank">facebook</a>
+          <a href="https://www.instagram.com/sjcbengaluru/?hl=en"
+            target="_blank">instagram</a>
+          <a href="https://www.youtube.com/c/SJCBengaluru" target="_blank">you tube</a>
+          <a href="https://twitter.com/sjcbengaluru?lang=en" target="_blank">twitter</a>
         </div>
 
         <div class="box">
